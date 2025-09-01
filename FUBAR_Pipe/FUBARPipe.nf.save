@@ -1,0 +1,16 @@
+#!/usr/bin/env nextflow
+
+/*
+ * Perform selection analysis with FUBAR
+ */
+
+//Pipeline is as such:
+// 1. Prep sequences using an R script. Makes sure they have no stop codons and are multiple of 3   
+// 2. MSA using mafft of protein sequences 
+// 3. Convert aligned sequences to codon alignment using pal2nal
+// 4. Create trees using FastTree2  
+// 5. Run FUBAR using the hyphy package 
+// 6. Parse the output json file using an R script 
+// 7. Generate graphs using R script 
+
+include { Prep_Seqs } from './modules/Prep_Files_Selection.nf'
