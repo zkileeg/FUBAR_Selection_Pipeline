@@ -10,9 +10,6 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -48,14 +45,13 @@ git clone https://github.com/zkileeg/FUBAR_Selection_Pipeline.git
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* This required nextflow, docker, and conda to work. To install: 
+* This pipeline requires nextflow, docker, and conda to work. To install: 
 
-  Nextflow must be installed
+  Install nextflow
   ```
   sudo apt-get install nextflow
   ```
-
+  
   Install miniconda using the guide here:
   ``` https://www.anaconda.com/docs/getting-started/miniconda/install#linux-terminal-installer ```
 
@@ -70,7 +66,7 @@ With the pre-requisities installed, you can move onto installing and testing.
    ```
    git clone https://github.com/github_username/repo_name.git
    ```
-3. Install from the docker file
+3. Install dependencies from the docker file
    ```
    cd FUBAR_Pipe/docker_depends
    docker build -t fubar_pipe_depends
@@ -94,7 +90,7 @@ With the pre-requisities installed, you can move onto installing and testing.
    library(dplyr)
    library(stringr)
    ```
-   Each should give a 
+   Each should give a help output and give no "not found" type errors. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
