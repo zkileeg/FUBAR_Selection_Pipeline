@@ -106,7 +106,7 @@ You can substitute '$PWD/FastaFiles/' with the folder(s) your sequences are loca
 nextflow run FUBARPipe.nf --input_fasta $PWD/FastaFiles/ --input_cds $PWD/FastaFiles/
 ```
 
-NOTE: The peptide files MUST in a '.fasta' extension, and the cds files MUST end in '.cds' 
+NOTE: The peptide files MUST end in a '.fasta' extension, and the cds files MUST end in '.cds' 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
