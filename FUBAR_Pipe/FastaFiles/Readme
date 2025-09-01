@@ -1,0 +1,5 @@
+Example files to use are here. 
+
+Example command:
+
+nextflow run FUBARPipe.nf --input_fasta $PWD/FastaFiles/ --input_cds $PWD/FastaFiles/
