@@ -29,6 +29,9 @@
 
 Nextflow pipeline for calculating the rates of positive and negative selection using FUBAR from the hyphy package. 
 
+
+![Flowchart](https://github.com/zkileeg/FUBAR_Selection_Pipeline/main/FUBAR_Pipe_Flowchart.png?raw=true)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
