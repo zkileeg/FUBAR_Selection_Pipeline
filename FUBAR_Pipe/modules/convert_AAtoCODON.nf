@@ -13,6 +13,8 @@
 
 process convert_AAtoCODON {
 
+	//respect output order
+	fair true
 	container 'fubar_pipe_depends'
 	
 	publishDir './workdir', mode: 'copy' 
