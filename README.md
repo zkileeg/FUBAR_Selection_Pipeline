@@ -44,7 +44,7 @@ For the impatient
 
 ```
 git clone https://github.com/zkileeg/FUBAR_Selection_Pipeline.git
-cd FUBAR_Pipe/docker_depends
+cd FUBAR_Selection_Pipeline/FUBAR_Pipe/docker_depends
 docker build -t fubar_pipe_depends
 cd ..
 nextflow run FUBARPipe.nf --input_fasta $PWD/FastaFiles/ --input_cds $PWD/FastaFiles/
@@ -75,7 +75,8 @@ With the pre-requisities installed, you can move onto installing and testing.
    ```
 3. Install dependencies from the docker file
    ```
-   cd FUBAR_Pipe/docker_depends
+   cd FUBAR_Selection_Pipeline/FUBAR_Pipe/docker_depends
+   
    docker build -t fubar_pipe_depends
    ```
 4. Test to make sure everything is working properly
