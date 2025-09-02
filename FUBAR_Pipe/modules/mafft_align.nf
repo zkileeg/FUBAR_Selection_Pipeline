@@ -11,6 +11,8 @@
 
 process mafft_align {
 
+	//make sure output order stays consistent. Need file pairs to be maintained
+	fair true 
 	container 'fubar_pipe_depends:latest'
 	
 	publishDir './workdir', mode: 'copy' 
