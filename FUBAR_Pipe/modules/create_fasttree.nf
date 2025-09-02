@@ -11,6 +11,8 @@
 
 process create_fasttree {
 
+	//respect output order
+	fair true
 	container 'fubar_pipe_depends:latest'
 	
 	publishDir './workdir', mode: 'copy' 
