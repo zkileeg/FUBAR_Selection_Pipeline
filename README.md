@@ -40,10 +40,14 @@ Nextflow pipeline for calculating the rates of positive and negative selection u
 
 <!-- GETTING STARTED -->
 ## Getting Started
-To start, clone the repository
+For the impatient
 
 ```
 git clone https://github.com/zkileeg/FUBAR_Selection_Pipeline.git
+cd FUBAR_Pipe/docker_depends
+docker build -t fubar_pipe_depends
+cd ..
+nextflow run FUBARPipe.nf --input_fasta $PWD/FastaFiles/ --input_cds $PWD/FastaFiles/
 ```
 
 ### Prerequisites
@@ -67,7 +71,7 @@ With the pre-requisities installed, you can move onto installing and testing.
 ### Installation
 1. Clone the repo
    ```
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/zkileeg/FUBAR_Selection_Pipeline.git
    ```
 3. Install dependencies from the docker file
    ```
