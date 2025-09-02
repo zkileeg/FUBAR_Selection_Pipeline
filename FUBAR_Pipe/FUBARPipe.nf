@@ -37,8 +37,9 @@ workflow {
 	
 	//setup two channels. One finds all fasta files in the folder
 	//one finds all cds in the same or another folder 
-	seq_ch = Channel.fromPath("${params.input_fasta}*.fasta")
-	cds_ch = Channel.fromPath("${params.input_cds}*.cds")
+	//input order matters so we sort the file names then emit separately 
+	seq_ch = Channel.fromPath("${params.input_fasta}*.fasta").toSortedList().flatMap()
+	cds_ch = Channel.fromPath("${params.input_cds}*.cds").toSortedList().flatMap()
 	
 
 	//Prep_Seqs(seq_ch)
